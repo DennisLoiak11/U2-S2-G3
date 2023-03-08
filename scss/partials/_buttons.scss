@@ -1,0 +1,11 @@
+$colorBtn: (
+    blue: #0e6cff,
+    orange: #ff8700,
+    green: #4caf50
+);
+
+@each $key, $value in $colorBtn{
+    .btn-#{$key} {
+        background-color: $value;
+    }
+}
